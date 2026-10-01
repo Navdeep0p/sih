@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Project Vidhik · Automated Legal Metrology</title>
+<title>Project Vidhik · NAWI Type Evaluation (OIML R 76)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
@@ -34,46 +34,46 @@
     <div class="flex items-center gap-8">
       <div class="flex items-center gap-3">
         <div class="h-9 w-9 rounded-lg bg-gradient-to-br from-emerald-500 to-teal-600 text-white flex items-center justify-center"><i class="fa-solid fa-scale-balanced"></i></div>
-        <div class="leading-tight"><div class="font-semibold">Project Vidhik</div><div class="text-[11px] text-slate-500 hidden sm:block">Legal Metrology · OIML R-76</div></div>
+        <div class="leading-tight"><div class="font-semibold">Project Vidhik</div><div class="text-[11px] text-slate-500 hidden sm:block">NAWI Type Evaluation · OIML R 76</div></div>
       </div>
       <nav class="hidden md:flex items-center gap-1 text-sm font-medium">
-        <button data-nav="portal" onclick="showView('portal')" class="nav btn px-4 rounded-lg"><i class="fa-solid fa-landmark mr-2"></i>Central Portal</button>
-        <button data-nav="terminal" onclick="showView('terminal')" class="nav btn px-4 rounded-lg"><i class="fa-solid fa-tablet-screen-button mr-2"></i>Field Terminal</button>
+        <button data-nav="portal" onclick="showView('portal')" class="nav btn px-4 rounded-lg"><i class="fa-solid fa-landmark mr-2"></i>Lab Portal</button>
+        <button data-nav="terminal" onclick="showView('terminal')" class="nav btn px-4 rounded-lg"><i class="fa-solid fa-flask-vial mr-2"></i>Testing Workstation</button>
       </nav>
     </div>
     <div class="flex items-center gap-3">
       <div class="hidden sm:flex items-center gap-2 text-right">
-        <div class="leading-tight"><div class="text-sm font-medium">Officer R. Sharma</div><div class="text-[11px] text-slate-500">ID: LM-HYD-04</div></div>
+        <div class="leading-tight"><div class="text-sm font-medium">Dr. R. Sharma</div><div class="text-[11px] text-slate-500">Sr. Metrologist · RRSL Bench 02</div></div>
         <div class="h-9 w-9 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-sm font-semibold">RS</div>
       </div>
       <button class="md:hidden btn h-11 w-11 rounded-lg hover:bg-slate-100 text-slate-600" onclick="toggleMenu()" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
     </div>
   </div>
   <div id="mmenu" class="hidden md:hidden border-t border-slate-100 px-4 py-2 bg-white text-sm font-medium">
-    <button data-nav="portal" onclick="showView('portal')" class="nav btn w-full text-left px-3 rounded-lg"><i class="fa-solid fa-landmark w-6"></i>Central Portal</button>
-    <button data-nav="terminal" onclick="showView('terminal')" class="nav btn w-full text-left px-3 rounded-lg"><i class="fa-solid fa-tablet-screen-button w-6"></i>Field Terminal</button>
-    <div class="px-3 py-3 text-xs text-slate-500 border-t border-slate-100 mt-1">Officer R. Sharma · ID: LM-HYD-04</div>
+    <button data-nav="portal" onclick="showView('portal')" class="nav btn w-full text-left px-3 rounded-lg"><i class="fa-solid fa-landmark w-6"></i>Lab Portal</button>
+    <button data-nav="terminal" onclick="showView('terminal')" class="nav btn w-full text-left px-3 rounded-lg"><i class="fa-solid fa-flask-vial w-6"></i>Testing Workstation</button>
+    <div class="px-3 py-3 text-xs text-slate-500 border-t border-slate-100 mt-1">Dr. R. Sharma (Sr. Metrologist · RRSL Bench 02)</div>
   </div>
 </header>
 
 <main class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8">
 
-<!-- VIEW A: CENTRAL GOVERNMENT PORTAL -->
+<!-- VIEW A: LAB PORTAL -->
 <section id="view-portal" class="view active">
   <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
     <div>
-      <div class="text-xs font-medium text-emerald-700 mb-1">Department of Legal Metrology · Telangana State Unit</div>
-      <h1 class="text-2xl font-semibold text-slate-900">Central Inspection Dashboard</h1>
+      <div class="text-xs font-medium text-emerald-700 mb-1">Regional Reference Standard Laboratory (RRSL) · Type Evaluation Portal</div>
+      <h1 class="text-2xl font-semibold text-slate-900">Type Evaluation Dashboard</h1>
       <p class="text-sm text-slate-500 mt-1">FY 2026-27 · Data as of 01-Oct-2026 14:30 IST</p>
     </div>
-    <button onclick="showView('terminal')" class="btn inline-flex items-center justify-center gap-2 px-5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-medium shadow-sm"><i class="fa-solid fa-rocket"></i>Launch Field Terminal</button>
+    <button onclick="showView('terminal')" class="btn inline-flex items-center justify-center gap-2 px-5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-medium shadow-sm"><i class="fa-solid fa-rocket"></i>Launch Testing Workstation</button>
   </div>
 
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-    <div class="card p-5"><div class="flex justify-between text-sm text-slate-500"><span>Total state inspections</span><i class="fa-solid fa-clipboard-list text-emerald-600"></i></div><div class="text-3xl font-semibold mt-2">1,24,318</div><div class="text-xs text-emerald-700 mt-1"><i class="fa-solid fa-arrow-up"></i> 8.2% vs. last quarter</div></div>
-    <div class="card p-5"><div class="flex justify-between text-sm text-slate-500"><span>Compliance rate</span><i class="fa-solid fa-circle-check text-emerald-600"></i></div><div class="text-3xl font-semibold mt-2">94.6%</div><div class="h-1.5 rounded-full bg-slate-100 mt-3 overflow-hidden"><div class="h-full w-[94.6%] bg-emerald-500 rounded-full"></div></div></div>
-    <div class="card p-5"><div class="flex justify-between text-sm text-slate-500"><span>Active field terminals</span><i class="fa-solid fa-tablet-screen-button text-teal-600"></i></div><div class="text-3xl font-semibold mt-2">212</div><div class="text-xs text-slate-500 mt-1">31 currently offline-syncing</div></div>
-    <div class="card p-5"><div class="flex justify-between text-sm text-slate-500"><span>Fraud-gate rejections</span><i class="fa-solid fa-shield-halved text-amber-500"></i></div><div class="text-3xl font-semibold mt-2">7</div><div class="text-xs text-slate-500 mt-1">OCR ≠ manual entry, this month</div></div>
+    <div class="card p-5"><div class="flex justify-between text-sm text-slate-500"><span>Type evaluations logged</span><i class="fa-solid fa-clipboard-list text-emerald-600"></i></div><div class="text-3xl font-semibold mt-2">1,428</div><div class="text-xs text-emerald-700 mt-1"><i class="fa-solid fa-arrow-up"></i> 8.2% vs. last quarter</div></div>
+    <div class="card p-5"><div class="flex justify-between text-sm text-slate-500"><span>First-pass compliance</span><i class="fa-solid fa-circle-check text-emerald-600"></i></div><div class="text-3xl font-semibold mt-2">91.4%</div><div class="h-1.5 rounded-full bg-slate-100 mt-3 overflow-hidden"><div class="h-full w-[91.4%] bg-emerald-500 rounded-full"></div></div></div>
+    <div class="card p-5"><div class="flex justify-between text-sm text-slate-500"><span>Active test benches</span><i class="fa-solid fa-flask text-teal-600"></i></div><div class="text-3xl font-semibold mt-2">14</div><div class="text-xs text-slate-500 mt-1">3 awaiting reference-weight check</div></div>
+    <div class="card p-5"><div class="flex justify-between text-sm text-slate-500"><span>Pending model approvals</span><i class="fa-solid fa-hourglass-half text-amber-500"></i></div><div class="text-3xl font-semibold mt-2">19</div><div class="text-xs text-slate-500 mt-1">Awaiting Director review</div></div>
   </div>
 
   <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
@@ -81,20 +81,20 @@
       <div class="px-5 py-4 border-b border-slate-100 flex items-center justify-between"><h2 class="font-semibold">Recent Activity Ledger</h2><span class="px-2.5 py-1 rounded-full text-xs bg-emerald-100 text-emerald-700 font-medium"><i class="fa-solid fa-link mr-1"></i>Hash-chained</span></div>
       <div class="overflow-x-auto">
         <table class="w-full text-sm">
-          <thead class="bg-slate-50 text-xs uppercase tracking-wide text-slate-500"><tr><th class="text-left px-5 py-3 font-medium">Record</th><th class="text-left px-3 py-3 font-medium hidden md:table-cell">Inspector · District</th><th class="text-left px-3 py-3 font-medium hidden sm:table-cell">Timestamp</th><th class="text-left px-5 py-3 font-medium">Result</th></tr></thead>
+          <thead class="bg-slate-50 text-xs uppercase tracking-wide text-slate-500"><tr><th class="text-left px-5 py-3 font-medium">Record</th><th class="text-left px-3 py-3 font-medium hidden md:table-cell">Manufacturer &amp; Model</th><th class="text-left px-3 py-3 font-medium hidden sm:table-cell">Timestamp</th><th class="text-left px-5 py-3 font-medium">Result</th></tr></thead>
           <tbody class="divide-y divide-slate-100">
-            <tr><td class="px-5 py-3"><div class="font-medium">VR-26-10-0414</div><div class="text-xs text-slate-500">Essae DS-215 · 9f3a…c21e</div></td><td class="px-3 py-3 hidden md:table-cell">R. Sharma · Hyderabad</td><td class="px-3 py-3 hidden sm:table-cell text-slate-600">01-Oct-2026 13:52 IST</td><td class="px-5 py-3"><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700">Pass</span></td></tr>
-            <tr><td class="px-5 py-3"><div class="font-medium">VR-26-10-0413</div><div class="text-xs text-slate-500">Libra LT-30 · 41bd…07aa</div></td><td class="px-3 py-3 hidden md:table-cell">K. Reddy · Rangareddy</td><td class="px-3 py-3 hidden sm:table-cell text-slate-600">01-Oct-2026 13:40 IST</td><td class="px-5 py-3"><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700">Pass</span></td></tr>
-            <tr><td class="px-5 py-3"><div class="font-medium">VR-26-10-0412</div><div class="text-xs text-slate-500">Systems SC-60 · d07e…5b90</div></td><td class="px-3 py-3 hidden md:table-cell">A. Rao · Warangal</td><td class="px-3 py-3 hidden sm:table-cell text-slate-600">01-Oct-2026 12:26 IST</td><td class="px-5 py-3"><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-red-100 text-red-700">Fail · E &gt; MPE</span></td></tr>
-            <tr><td class="px-5 py-3"><div class="font-medium">VR-26-10-0411</div><div class="text-xs text-slate-500">Essae DS-215 · —</div></td><td class="px-3 py-3 hidden md:table-cell">S. Fatima · Karimnagar</td><td class="px-3 py-3 hidden sm:table-cell text-slate-600">01-Oct-2026 11:48 IST</td><td class="px-5 py-3"><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-amber-100 text-amber-700">Gate locked</span></td></tr>
-            <tr><td class="px-5 py-3"><div class="font-medium">VR-26-10-0410</div><div class="text-xs text-slate-500">Libra LT-15 · 6c18…e4d2</div></td><td class="px-3 py-3 hidden md:table-cell">P. Naidu · Nizamabad</td><td class="px-3 py-3 hidden sm:table-cell text-slate-600">01-Oct-2026 11:05 IST</td><td class="px-5 py-3"><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700">Pass</span></td></tr>
+            <tr><td class="px-5 py-3"><div class="font-medium">TE-2026-HYD-0940</div><div class="text-xs text-slate-500">Report hash 9f3a…c21e</div></td><td class="px-3 py-3 hidden md:table-cell">Essae Teraoka · DS-215 Tabletop</td><td class="px-3 py-3 hidden sm:table-cell text-slate-600">01-Oct-2026 13:52 IST</td><td class="px-5 py-3"><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700">OIML Compliant</span></td></tr>
+            <tr><td class="px-5 py-3"><div class="font-medium">TE-2026-HYD-0939</div><div class="text-xs text-slate-500">Report hash 41bd…07aa</div></td><td class="px-3 py-3 hidden md:table-cell">Avery Weigh-Tronix · ZM Series</td><td class="px-3 py-3 hidden sm:table-cell text-slate-600">01-Oct-2026 13:10 IST</td><td class="px-5 py-3"><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700">OIML Compliant</span></td></tr>
+            <tr><td class="px-5 py-3"><div class="font-medium">TE-2026-HYD-0938</div><div class="text-xs text-slate-500">Report hash d07e…5b90</div></td><td class="px-3 py-3 hidden md:table-cell">Libra Scales · LT-30 Bench</td><td class="px-3 py-3 hidden sm:table-cell text-slate-600">01-Oct-2026 12:26 IST</td><td class="px-5 py-3"><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-red-100 text-red-700">Rejected · Error &gt; MPE</span></td></tr>
+            <tr><td class="px-5 py-3"><div class="font-medium">TE-2026-HYD-0937</div><div class="text-xs text-slate-500">Report hash 6c18…e4d2</div></td><td class="px-3 py-3 hidden md:table-cell">Systems · SC-60 Platform</td><td class="px-3 py-3 hidden sm:table-cell text-slate-600">01-Oct-2026 11:48 IST</td><td class="px-5 py-3"><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700">OIML Compliant</span></td></tr>
+            <tr><td class="px-5 py-3"><div class="font-medium">TE-2026-HYD-0936</div><div class="text-xs text-slate-500">Report hash b2e5…19f0</div></td><td class="px-3 py-3 hidden md:table-cell">Contech · CA-15 Compact</td><td class="px-3 py-3 hidden sm:table-cell text-slate-600">01-Oct-2026 11:05 IST</td><td class="px-5 py-3"><span class="px-2.5 py-1 rounded-full text-xs font-medium bg-emerald-100 text-emerald-700">OIML Compliant</span></td></tr>
           </tbody>
         </table>
       </div>
     </div>
     <div class="card p-5">
-      <h2 class="font-semibold mb-4">District Compliance</h2>
-      <div class="space-y-4 text-sm" id="districts"></div>
+      <h2 class="font-semibold mb-1">Configurable Standards Engine</h2><p class="text-xs text-slate-500 mb-4">Rule sets loaded for the active evaluation</p>
+      <ul class="space-y-4 text-sm"><li class="flex gap-3"><div class="h-9 w-9 shrink-0 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center"><i class="fa-solid fa-scale-balanced"></i></div><div class="min-w-0"><div class="font-medium leading-snug">OIML R 76-1:2006 Core Schema</div><div class="text-xs text-slate-500">Metrological and technical requirements</div></div><span class="ml-auto self-start px-2 py-0.5 rounded-full text-[11px] bg-emerald-100 text-emerald-700 font-medium">Active</span></li><li class="flex gap-3"><div class="h-9 w-9 shrink-0 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center"><i class="fa-solid fa-file-lines"></i></div><div class="min-w-0"><div class="font-medium leading-snug">OIML R 76-2:2007 Format Schema</div><div class="text-xs text-slate-500">Type evaluation report format</div></div><span class="ml-auto self-start px-2 py-0.5 rounded-full text-[11px] bg-emerald-100 text-emerald-700 font-medium">Active</span></li><li class="flex gap-3"><div class="h-9 w-9 shrink-0 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center"><i class="fa-solid fa-fingerprint"></i></div><div class="min-w-0"><div class="font-medium leading-snug">BSA 2023 Electronic Evidence (SHA-256)</div><div class="text-xs text-slate-500">Hash-sealed electronic records</div></div><span class="ml-auto self-start px-2 py-0.5 rounded-full text-[11px] bg-emerald-100 text-emerald-700 font-medium">Active</span></li></ul>
     </div>
   </div>
 
@@ -104,16 +104,16 @@
   </div>
 </section>
 
-<!-- VIEW B: FIELD INSPECTOR TERMINAL -->
+<!-- VIEW B: TESTING WORKSTATION -->
 <section id="view-terminal" class="view">
   <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-5">
     <div>
-      <h1 class="text-2xl font-semibold text-slate-900">Field Inspector Terminal</h1>
-      <p class="text-sm text-slate-500 mt-1">Audit VR-26-10-0415 · Essae DS-215 Tabletop Scale · SN-2026-HYD-8492</p>
+      <h1 class="text-2xl font-semibold text-slate-900">Type-Evaluation Testing Workstation</h1>
+      <p class="text-sm text-slate-500 mt-1">Application ID: TE-2026-HYD-0941 · Essae DS-215 Tabletop Scale · SN-2026-HYD-8492</p>
     </div>
     <div class="flex flex-wrap gap-2 text-xs">
       <span class="px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-700 font-medium"><i class="fa-solid fa-plane mr-1"></i>Offline mode</span>
-      <span class="px-2.5 py-1 rounded-full bg-teal-100 text-teal-700 font-medium"><i class="fa-solid fa-location-dot mr-1"></i>17.3850° N, 78.4867° E (Locked)</span>
+      <span class="px-2.5 py-1 rounded-full bg-teal-100 text-teal-700 font-medium"><i class="fa-solid fa-flask mr-1"></i>RRSL Bench 02 · Hyderabad</span>
     </div>
   </div>
 
@@ -134,12 +134,20 @@
           <label class="block col-span-2"><span class="text-slate-500 text-xs">Reference test load (kg)</span>
             <select id="load" class="field mt-1" onchange="resetAudit()"><option value="0.5">0.500 (100 e)</option><option value="5">5.000 (1,000 e)</option><option value="10" selected>10.000 (2,000 e)</option><option value="15">15.000 (3,000 e)</option></select></label>
         </div>
+        <div class="mt-4 border-t border-slate-100 pt-3">
+          <div class="text-xs font-semibold text-slate-700 mb-2"><i class="fa-solid fa-temperature-half text-emerald-600 mr-1"></i>Laboratory Environment (OIML R 76 Clause 3.9)</div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-sm">
+            <label class="block"><span class="text-slate-500 text-xs">Ambient Temperature</span><input id="envT" type="text" value="22.4 °C" class="field mt-1"></label>
+            <label class="block"><span class="text-slate-500 text-xs">Rel. Humidity</span><input id="envH" type="text" value="54.0 %RH" class="field mt-1"></label>
+            <label class="block"><span class="text-slate-500 text-xs">Pressure</span><input id="envP" type="text" value="1013.2 hPa" class="field mt-1"></label>
+          </div>
+        </div>
         <div class="mt-4 text-xs text-slate-500 flex justify-between border-t border-slate-100 pt-3"><span>Derived: n = Max / e = <b id="nVal" class="text-slate-800">3000</b></span><span>Weights: M1 · Cert LM-CAL-0771</span></div>
       </div>
 
       <div class="card p-5">
-        <div class="tag uppercase text-emerald-700 font-semibold mb-1">Step 2 · Hardware-Aware Camera</div>
-        <h2 class="font-semibold mb-4">Capture</h2>
+        <div class="tag uppercase text-emerald-700 font-semibold mb-1">Step 2 · Hardware-Aware Capture</div>
+        <h2 class="font-semibold mb-1">Bench Vision Assistant</h2><p class="text-xs text-slate-500 mb-4">Reads the indicator display automatically, reducing transcription eye-fatigue for metrologists during long test sessions.</p>
         <div class="relative rounded-lg border border-slate-200 bg-gradient-to-br from-slate-100 to-slate-200 p-4 flex flex-col items-center min-h-[150px] justify-center">
           <span class="absolute top-2 left-2 h-4 w-4 border-t-2 border-l-2 border-emerald-600"></span><span class="absolute top-2 right-2 h-4 w-4 border-t-2 border-r-2 border-emerald-600"></span>
           <span class="absolute bottom-2 left-2 h-4 w-4 border-b-2 border-l-2 border-emerald-600"></span><span class="absolute bottom-2 right-2 h-4 w-4 border-b-2 border-r-2 border-emerald-600"></span>
@@ -164,7 +172,7 @@
     <div class="lg:col-span-7 space-y-6">
       <div class="card p-5">
         <div class="flex items-start justify-between gap-2 flex-wrap mb-4">
-          <div><div class="tag uppercase text-emerald-700 font-semibold mb-1">Steps 3 &amp; 4 · Edge Vision + Anti-Fraud Gate</div><h2 class="font-semibold">Reconciliation Gate</h2></div>
+          <div><div class="tag uppercase text-emerald-700 font-semibold mb-1">Steps 3 &amp; 4 · Edge Vision + Double-Check Gate</div><h2 class="font-semibold">Transcription Double-Check Gate</h2></div>
           <span class="px-2.5 py-1 rounded-full text-xs bg-slate-100 text-slate-600 font-medium"><i class="fa-solid fa-microchip mr-1"></i>On-device OCR · 5.4 MB model</span>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -174,7 +182,7 @@
             <div class="text-xs text-slate-500 mt-2">Confidence: <span id="conf">—</span></div>
           </div>
           <div class="rounded-lg border border-slate-200 p-4">
-            <label for="manual" class="text-xs uppercase tracking-wide text-slate-500 mb-2 block">Inspector Manual Entry</label>
+            <label for="manual" class="text-xs uppercase tracking-wide text-slate-500 mb-2 block">Testing Officer Visual Check</label>
             <div class="flex items-center gap-2"><input id="manual" type="text" inputmode="decimal" autocomplete="off" disabled placeholder="Capture first" oninput="evaluate()" class="field text-lg font-semibold"><span class="text-slate-500">kg</span></div>
             <button onclick="autofill()" class="text-xs text-emerald-700 hover:underline mt-2">Fill from display (demo)</button>
           </div>
@@ -186,7 +194,7 @@
         <div class="px-5 pt-5"><div class="tag uppercase text-emerald-700 font-semibold mb-1">Step 5 · Metrology Core</div><h2 class="font-semibold">Metrology Verdict</h2></div>
         <div id="verdict" class="m-5 rounded-lg p-4 flex items-start gap-4 bg-slate-50">
           <div id="vIcon" class="h-11 w-11 rounded-full bg-slate-200 text-slate-500 flex items-center justify-center text-lg shrink-0"><i class="fa-solid fa-hourglass-half"></i></div>
-          <div><div id="vTitle" class="font-semibold text-lg">Verdict pending</div><div id="vSub" class="text-sm text-slate-600">Capture the display and pass the anti-fraud gate.</div></div>
+          <div><div id="vTitle" class="font-semibold text-lg">Verdict pending</div><div id="vSub" class="text-sm text-slate-600">Capture the display and pass the double-check gate.</div></div>
         </div>
         <div class="px-5 grid grid-cols-2 md:grid-cols-5 gap-4 text-sm pb-2">
           <div><div class="text-xs text-slate-500">Load (L)</div><div id="mL" class="font-semibold">—</div></div>
@@ -197,25 +205,26 @@
         </div>
         <div class="px-5 pb-5 pt-2 text-xs text-slate-500 font-mono">E = I + 0.5e − ΔL − L</div>
         <div class="px-5 pb-5 flex flex-col sm:flex-row gap-3">
-          <button id="repBtn" disabled onclick="genReport()" class="btn px-5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-medium disabled:bg-slate-200 disabled:text-slate-400 disabled:cursor-not-allowed"><i class="fa-solid fa-file-shield mr-2"></i>Generate Statutory Report</button>
-          <button onclick="resetAudit()" class="btn px-5 rounded-lg border border-slate-300 bg-white hover:bg-slate-50 text-sm font-medium"><i class="fa-solid fa-rotate-left mr-2"></i>New audit</button>
+          <button id="repBtn" disabled onclick="genReport()" class="btn px-5 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-medium disabled:bg-slate-200 disabled:text-slate-400 disabled:cursor-not-allowed"><i class="fa-solid fa-file-shield mr-2"></i>Generate Type Evaluation Report</button>
+          <button onclick="resetAudit()" class="btn px-5 rounded-lg border border-slate-300 bg-white hover:bg-slate-50 text-sm font-medium"><i class="fa-solid fa-rotate-left mr-2"></i>New evaluation</button>
         </div>
       </div>
 
       <div id="report" class="card p-5 hidden">
-        <div class="tag uppercase text-emerald-700 font-semibold mb-1">Step 6 · Statutory Artifact</div>
+        <div class="tag uppercase text-emerald-700 font-semibold mb-1">Step 6 · Type Evaluation Report</div>
         <div class="flex flex-col sm:flex-row gap-5">
           <div class="flex-1 text-sm">
-            <h2 class="font-semibold mb-3">Verification Certificate <span id="rId" class="text-slate-500 font-normal"></span></h2>
+            <h2 class="font-semibold mb-3">OIML R 76-2:2007 Type Evaluation Report <span id="rId" class="text-slate-500 font-normal"></span></h2>
             <dl class="divide-y divide-slate-100">
-              <div class="flex justify-between py-1.5"><dt class="text-slate-500">Instrument</dt><dd class="font-medium text-right">Essae DS-215 · SN-2026-HYD-8492</dd></div>
-              <div class="flex justify-between py-1.5"><dt class="text-slate-500">Inspector</dt><dd class="font-medium text-right">R. Sharma (LM-HYD-04)</dd></div>
+              <div class="flex justify-between py-1.5"><dt class="text-slate-500">Instrument under test</dt><dd class="font-medium text-right">Essae DS-215 · SN-2026-HYD-8492</dd></div>
+              <div class="flex justify-between py-1.5"><dt class="text-slate-500">Evaluator</dt><dd class="font-medium text-right">Dr. R. Sharma · RRSL Bench 02</dd></div>
               <div class="flex justify-between py-1.5"><dt class="text-slate-500">Timestamp</dt><dd class="font-medium text-right">01-Oct-2026 14:34 IST</dd></div>
-              <div class="flex justify-between py-1.5"><dt class="text-slate-500">GPS</dt><dd class="font-medium text-right">17.3850° N, 78.4867° E</dd></div>
+              <div class="flex justify-between py-1.5"><dt class="text-slate-500">Application ID</dt><dd class="font-medium text-right">TE-2026-HYD-0941</dd></div>
+              <div class="flex justify-between py-1.5 gap-4"><dt class="text-slate-500 shrink-0">Environment</dt><dd id="rEnv" class="font-medium text-right"></dd></div>
               <div class="flex justify-between py-1.5"><dt class="text-slate-500">Result</dt><dd id="rRes" class="font-medium"></dd></div>
             </dl>
             <div class="mt-3 text-[11px] text-slate-500 break-all font-mono">SHA-256: <span id="rHash"></span></div>
-            <button id="pdfBtn" onclick="savePdf()" class="btn mt-3 px-4 rounded-lg border border-emerald-600 text-emerald-700 hover:bg-emerald-50 text-sm font-medium"><i class="fa-solid fa-file-pdf mr-2"></i>Save tamper-proof PDF</button>
+            <button id="pdfBtn" onclick="savePdf()" class="btn mt-3 px-4 rounded-lg border border-emerald-600 text-emerald-700 hover:bg-emerald-50 text-sm font-medium"><i class="fa-solid fa-file-pdf mr-2"></i>Export Official PDF</button>
           </div>
           <div class="shrink-0 self-start sm:self-center text-center">
             <div id="qr" class="h-36 w-36 p-2 border border-slate-200 rounded-lg bg-white"></div>
@@ -231,11 +240,9 @@
 <script>
 const $=id=>document.getElementById(id);
 const TH={I:[50000,200000],II:[5000,20000],III:[500,2000],IIII:[50,200]}; // OIML R-76 MPE break points (in e)
-const DIST=[['Hyderabad',97.1],['Rangareddy',95.4],['Warangal',93.8],['Karimnagar',92.6],['Nizamabad',90.9]];
-const ARCH=[['fa-sliders','Smart Setup','Class, Max, Min and e entered once per instrument.'],['fa-camera','Hardware-Aware Camera','50/60 Hz flicker sync so LED digits never drop.'],['fa-microchip','Edge Vision (<6 MB)','On-device OCR reads the 7-segment display offline.'],['fa-shield-halved','Anti-Fraud Gate','OCR must equal manual entry; locked with GPS + time.'],['fa-calculator','Metrology Core','Deterministic error vs OIML MPE limits.'],['fa-qrcode','Statutory Artifact','PDF report with cryptographic QR stamp.']];
+const ARCH=[['fa-sliders','Smart Setup','Class, Max, Min, e and bench conditions logged per sample.'],['fa-camera','Bench Vision Assistant','50/60 Hz flicker sync; cuts transcription eye-fatigue.'],['fa-microchip','Edge Vision (<6 MB)','On-device OCR reads the 7-segment display offline.'],['fa-user-check','Transcription Double-Check','OCR must equal the officer’s visual check.'],['fa-calculator','Metrology Core','Deterministic error vs OIML R 76 MPE limits.'],['fa-file-shield','Type Evaluation Report','OIML R 76-2 report with SHA-256 sealed QR.']];
 let ocr=null,busy=false,synced=true,hz=50,matched=false;
 
-$('districts').innerHTML=DIST.map(([n,p])=>`<div><div class="flex justify-between mb-1"><span>${n}</span><span class="font-medium">${p}%</span></div><div class="h-1.5 rounded-full bg-slate-100 overflow-hidden"><div class="h-full bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full" style="width:${p}%"></div></div></div>`).join('');
 $('arch').innerHTML=ARCH.map(([i,t,d],k)=>`<div class="flex gap-3 p-3 rounded-lg border border-slate-200"><div class="h-9 w-9 shrink-0 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center"><i class="fa-solid ${i}"></i></div><div><div class="font-medium">${k+1}. ${t}</div><div class="text-xs text-slate-500">${d}</div></div></div>`).join('');
 
 function toggleMenu(){$('mmenu').classList.toggle('hidden')}
@@ -247,7 +254,7 @@ function showView(v){
   if(v==='terminal')resetAudit();
 }
 function setStep(n){
-  const names=['Setup','Capture','Verify','Report'];
+  const names=['Test Setup','Bench Capture','Double-Check','Evaluation Report'];
   $('stepper').innerHTML=names.map((t,i)=>{
     const d=i<n,c=i===n;
     return `<div class="flex items-center gap-2 ${d||c?'font-medium text-slate-800':'text-slate-400'}"><span class="h-7 w-7 rounded-full flex items-center justify-center text-xs font-semibold ${d?'bg-emerald-600 text-white':c?'bg-emerald-100 text-emerald-700 ring-2 ring-emerald-500':'bg-slate-100 text-slate-400'}">${d?'<i class="fa-solid fa-check"></i>':i+1}</span>${t}</div>`}).join('');
@@ -269,7 +276,7 @@ function resetAudit(){
   $('lcd').textContent='-.---';$('bar').style.width='0%';$('frames').innerHTML='';
   $('ocrVal').textContent='—';$('conf').textContent='—';$('manual').value='';$('manual').disabled=true;$('manual').placeholder='Capture first';
   $('capBtn').disabled=false;$('capBtn').classList.remove('busy');
-  $('report').classList.add('hidden');$('pdfBtn').innerHTML='<i class="fa-solid fa-file-pdf mr-2"></i>Save tamper-proof PDF';
+  $('report').classList.add('hidden');$('pdfBtn').innerHTML='<i class="fa-solid fa-file-pdf mr-2"></i>Export Official PDF';
   updSync();setStep(0);evaluate();
 }
 function capture(){
@@ -306,19 +313,19 @@ function paint(s,icon,t,sub){
 function evaluate(){
   const{e,L}=cfg(),m=$('manual').value;matched=false;$('repBtn').disabled=true;
   $('mL').textContent=fmt(L)+' kg';['mI','mE','mM'].forEach(i=>$(i).textContent='—');
-  if(ocr===null){gate('idle','<span><i class="fa-solid fa-lock mr-2"></i>Gate locked · tap “3-Frame Burst Capture” first</span>');paint('idle','fa-hourglass-half','Verdict pending','Capture the display and pass the anti-fraud gate.');return}
-  if(m===''){gate('idle','<span><i class="fa-solid fa-lock mr-2"></i>Gate locked · type the value you read (e.g. 10.000)</span>');paint('idle','fa-keyboard','Awaiting inspector entry','OCR value captured. Enter what you read on the display.');return}
+  if(ocr===null){gate('idle','<span><i class="fa-solid fa-lock mr-2"></i>Gate locked · tap “3-Frame Burst Capture” first</span>');paint('idle','fa-hourglass-half','Verdict pending','Capture the display and pass the double-check gate.');return}
+  if(m===''){gate('idle','<span><i class="fa-solid fa-lock mr-2"></i>Gate locked · type the value you read (e.g. 10.000)</span>');paint('idle','fa-keyboard','Awaiting officer visual check','OCR value captured. Enter what you read on the display.');return}
   const man=Math.round(parseFloat(String(m).replace(',','.'))*1000)/1000;
   if(isNaN(man)){gate('idle','<span><i class="fa-solid fa-keyboard mr-2"></i>Enter a number, e.g. 10.000</span>');return}
   if(Math.abs(man-ocr)>0.0004){
-    gate('bad',`<span class="font-medium"><i class="fa-solid fa-circle-xmark mr-2"></i>Mismatch · OCR ${fmt(ocr)} ≠ manual ${fmt(man)}</span><span class="text-xs">GPS lock withheld</span>`);
-    paint('warn','fa-triangle-exclamation','Anti-fraud gate closed','Values must match exactly. Re-capture with flicker sync on, or correct your entry.');return}
+    gate('bad',`<span class="font-medium"><i class="fa-solid fa-circle-xmark mr-2"></i>Mismatch · OCR ${fmt(ocr)} ≠ manual ${fmt(man)}</span><span class="text-xs">Entry not sealed</span>`);
+    paint('warn','fa-triangle-exclamation','Double-check gate closed','Values must match exactly. Re-capture with flicker sync on, or correct your entry.');return}
   matched=true;setStep(2);
-  gate('ok','<span class="font-medium"><i class="fa-solid fa-circle-check mr-2"></i>Match</span><span><i class="fa-solid fa-location-dot mr-1"></i>GPS Locked · 17.3850° N, 78.4867° E</span><span class="text-xs">01-Oct-2026 14:32 IST</span>');
+  gate('ok','<span class="font-medium"><i class="fa-solid fa-circle-check mr-2"></i>Match</span><span><i class="fa-solid fa-lock mr-1"></i>Bench 02 · Entry sealed</span><span class="text-xs">01-Oct-2026 14:32 IST</span>');
   const I=ocr*1000,dl=parseFloat($('dl').value)||0,E=I+0.5*e-dl-L*1000,M=mpe(),ok=Math.abs(E)<=M+1e-9;
   $('mI').textContent=fmt(ocr)+' kg';$('mE').textContent=(E>0?'+':'')+E.toFixed(1)+' g';$('mM').textContent='±'+M+' g';
-  if(ok)paint('pass','fa-circle-check','PASS — error within MPE',`|E| = ${Math.abs(E).toFixed(1)} g ≤ ${M} g. Instrument conforms to OIML R-76 Class ${cfg().cls}.`);
-  else paint('fail','fa-circle-xmark','FAIL — error exceeds MPE',`|E| = ${Math.abs(E).toFixed(1)} g > ${M} g. Instrument must be rejected or adjusted.`);
+  if(ok)paint('pass','fa-circle-check','PASS — error within MPE',`|E| = ${Math.abs(E).toFixed(1)} g ≤ ${M} g. Model under test conforms to OIML R 76 Class ${cfg().cls}.`);
+  else paint('fail','fa-circle-xmark','FAIL — error exceeds MPE',`|E| = ${Math.abs(E).toFixed(1)} g > ${M} g. Model does not meet type-evaluation requirements.`);
   $('repBtn').disabled=false;
 }
 function hash(s){let h=[2166136261,5381,33,7,99,1234,777,4242];let o='';for(let k=0;k<8;k++){let x=h[k];for(let i=0;i<s.length;i++){x=Math.imul(x^s.charCodeAt(i),16777619)>>>0}o+=x.toString(16).padStart(8,'0')}return o}
@@ -331,14 +338,15 @@ function qrSvg(seed){
 }
 function genReport(){
   if(!matched)return;
-  const{e,L}=cfg(),pass=$('vTitle').textContent.startsWith('PASS'),id='VR-26-10-0415';
-  const hx=hash([id,'SN-2026-HYD-8492','LM-HYD-04',ocr,L,$('dl').value,e,pass,'17.3850N78.4867E'].join('|'));
-  $('rId').textContent='· '+id;$('rHash').textContent=hx;
+  const{e,L}=cfg(),pass=$('vTitle').textContent.startsWith('PASS'),id='TE-2026-HYD-0941';
+  const env=[$('envT').value.trim(),$('envH').value.trim(),$('envP').value.trim()].join(' · ');
+  const hx=hash([id,'SN-2026-HYD-8492','RRSL-B02',ocr,L,$('dl').value,e,pass,env].join('|'));
+  $('rId').textContent='· '+id;$('rEnv').textContent=env;$('rHash').textContent=hx;
   $('rRes').innerHTML=pass?'<span class="px-2.5 py-1 rounded-full text-xs bg-emerald-100 text-emerald-700">Pass</span>':'<span class="px-2.5 py-1 rounded-full text-xs bg-red-100 text-red-700">Fail</span>';
   $('qr').innerHTML=qrSvg(hx);$('report').classList.remove('hidden');setStep(4);
   $('report').scrollIntoView({behavior:'smooth',block:'nearest'});
 }
-function savePdf(){$('pdfBtn').innerHTML='<i class="fa-solid fa-check mr-2"></i>Saved offline · queued for sync'}
+function savePdf(){$('pdfBtn').innerHTML='<i class="fa-solid fa-check mr-2"></i>Exported · SHA-256 sealed'}
 showView('portal');updSync();setStep(0);
 </script>
 </body>
